@@ -1,0 +1,31 @@
+.card {
+  background-color: #f8f8ff;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+  margin: 10px;
+  width: 180px;
+}
+
+.heading-2 {
+  color: #e73959;
+  font-size: 18px;
+}
+
+.avatar {
+  width: 80px;
+}
+
+.extra-img {
+  width: 20px;
+}
+
+.extra {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto';
+  color:#1e293b;
+}

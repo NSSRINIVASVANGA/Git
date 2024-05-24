@@ -1,0 +1,27 @@
+.lng-btn-click {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #0284c7;
+  color: #0284c7;
+  font-family: 'Roboto';
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.lng-btn {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+li {
+  border: 0px;
+}
