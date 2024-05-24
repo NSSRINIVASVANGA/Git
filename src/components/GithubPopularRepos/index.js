@@ -25,7 +25,6 @@ class GithubPopularRepos extends Component {
   state = {
     langsList: [],
     clickedId: languageFiltersData[0].id,
-    activeLang: languageFiltersData[0].language,
     apiStatus: apiStatusConstants.initial,
   }
 
@@ -54,8 +53,8 @@ class GithubPopularRepos extends Component {
 
   getLanguagesList = async () => {
     this.setState({apiStatus: apiStatusConstants.inProgress})
-    const {activeLang} = this.state
-    const url = `https://apis.ccbp.in/popular-repos?language=${activeLang}`
+    const {clickedId} = this.state
+    const url = `https://apis.ccbp.in/popular-repos?language=${clickedId}`
     const response = await fetch(url)
     const data = await response.json()
     if (response.ok === true) {
@@ -65,8 +64,8 @@ class GithubPopularRepos extends Component {
     }
   }
 
-  onSelect = (id, lang) => {
-    this.setState({clickedId: id, activeLang: lang}, this.getLanguagesList)
+  onSelect = (id) => {
+    this.setState({clickedId: id}, this.getLanguagesList)
   }
 
   success = () => {
