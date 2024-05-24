@@ -6,7 +6,7 @@ const LanguageFilterItem = props => {
   const calssVal = clickedId === id ? 'lng-btn-click' : 'lng-btn'
 
   const clicked = () => {
-    onSelect(id, language)
+    onSelect(id)
   }
   return (
     <li>
